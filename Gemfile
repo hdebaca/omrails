@@ -3,12 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'jquery-rails'
 
-group :production do 
+group :developement, :test, :production do 
 	gem 'pg'
-end 
-
-group :developement, :test do 
-	gem 'sqlite3'
 end 
 
 group :assets do
